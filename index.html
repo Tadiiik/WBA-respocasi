@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocasi</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    </style>
+    <!--zdroj obrázku: https://www.businessinfo.cz/clanky/cesko-loni-navstivilo-o-71-procent-vic-turistu-nez-v-roce-2022-mene-nez-pred-pandemii/-->
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        @media (min-width: 320px) and (max-width: 1920px) and (min-height: 420px) and (max-height: 1080px){
+            body {
+                text-decoration: underline solid green;
+            }
+        }
+
+        body {
+            background-image: url(https://storage.googleapis.com/businessinfo_cz/2019/12/5dcdeffa-karluv-most-praha-turismus-shutterstock_1033106005-scaled.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Roboto', 'calibri';
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        main{
+            margin-top: 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main article:first-child{
+            background-color: rgb(255, 255, 255, 0.8);
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        main article:first-child section:nth-child(3) {
+            color: #2b2b2b;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 116px;
+            padding-right: 116px;
+            font-size: 50px;
+            font-weight: 900;
+        }
+
+        main article:first-child section:nth-child(2) {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 25px;
+        }
+        main article:first-child section:nth-child(2) div:nth-child(2) {
+            color: #2984f8;
+        }
+
+        main article:first-child section:first-child {
+            font-size: 120px;
+            color: #768c8f;
+            scale: -1 1;
+        }
+
+        main article:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            background-color: #303132;
+            text-align: center;
+        }
+
+        main article:nth-child(2) section:first-child {
+            padding-top: 40px;
+            font-size: 60px;
+        }
+
+        main article:nth-child(2) section:nth-child(2) {
+            color: #868582;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-weight: 700;
+        }
+
+        main article:nth-child(2) section:nth-child(3) {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #e98c45;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        aside {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        aside section:nth-child(1n) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+        }
+        
+        aside section:nth-child(1n) div:nth-child(1) {
+            padding-bottom: 20px;
+            font-weight: 500;
+        }
+
+        aside section:nth-child(1n) div:nth-child(2) {
+            font-size: 20px;
+        }
+
+        aside section:nth-child(2n) {
+            border-left: 1px #c4c4c4 solid;
+            border-right: 1px #c4c4c4 solid;
+        }
+
+        aside section:nth-child(1n) {
+            border-top: 20px white solid;
+            border-bottom: 20px white solid;
+        }
+    </style>
+</head>
+<body>
+    <!--margin-top: 300px;
+        margin-left: 750px;
+        margin-right: 750px;-->
+    <main>
+        <article>
+            <section>☁</section>
+            <section>
+                <div>V: 5°C</div>
+                <div>N: -2°C</div>
+            </section>
+            <section>Praha</section>
+        </article>
+        <!--margin-top: -150px;
+            margin-left: 420px;
+            margin-right: -200px;-->
+        <article>
+            <section>4°C</section>
+            <section>Aktualizováno: 15:34</section>
+            <section>
+                <div>15%</div>
+                <div>10km/h</div>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <!--padding: 25px;-->
+        <section>
+            <div>PON</div>
+            <div>3°C</div>
+        </section>
+        <section>
+            <div>ÚTE</div>
+            <div>5°C</div>
+        </section>
+        <section>
+            <div>STŘ</div>
+            <div>8°C</div>
+        </section>
+        <section>
+            <div>ČTV</div>
+            <div>8°C</div>
+        </section>
+        <section>
+            <div>PÁT</div>
+            <div>-2°C</div>
+        </section>
+        <section>
+            <div>SOB</div>
+            <div>0°C</div>
+        </section>
+        <section>
+            <div>NED</div>
+            <div>5°C</div>
+        </section>
+    </aside>
+</body>
+</html>
